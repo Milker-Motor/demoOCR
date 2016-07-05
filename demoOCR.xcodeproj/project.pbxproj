@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8307B7881D26A58600513F2A /* license in Resources */ = {isa = PBXBuildFile; fileRef = 8307B7861D26A4FA00513F2A /* license */; };
+		831E3A761D2C0A5700C8B584 /* MobilOCR.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6AA1D19A2CF0040C1AF /* MobilOCR.h */; };
+		833B7E161D1C2F9C00A340DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833B7E151D1C2F9C00A340DB /* AVFoundation.framework */; };
+		83C9C5181D1940040040C1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C9C5161D1940040040C1AF /* Main.storyboard */; };
+		83C9C51A1D1940040040C1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C9C5191D1940040040C1AF /* Assets.xcassets */; };
+		83C9C51D1D1940040040C1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C9C51B1D1940040040C1AF /* LaunchScreen.storyboard */; };
+		83C9C57C1D1941880040C1AF /* English.akw in Copy Files ( Keywords ) */ = {isa = PBXBuildFile; fileRef = 83C9C55B1D1940800040C1AF /* English.akw */; };
+		83C9C57D1D1941880040C1AF /* French.akw in Copy Files ( Keywords ) */ = {isa = PBXBuildFile; fileRef = 83C9C55C1D1940800040C1AF /* French.akw */; };
+		83C9C57F1D1941AA0040C1AF /* English.edc in Copy Files ( Dictionaries ) */ = {isa = PBXBuildFile; fileRef = 83C9C53D1D1940800040C1AF /* English.edc */; };
+		83C9C5801D1941AA0040C1AF /* French.edc in Copy Files ( Dictionaries ) */ = {isa = PBXBuildFile; fileRef = 83C9C53E1D1940800040C1AF /* French.edc */; };
+		83C9C5821D1941C60040C1AF /* European.rom in Copy Files ( Patterns ) */ = {isa = PBXBuildFile; fileRef = 83C9C55F1D1940800040C1AF /* European.rom */; };
+		83C9C5BA1D1976FD0040C1AF /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5101D1940040040C1AF /* AppDelegate.h */; };
+		83C9C5BB1D1976FD0040C1AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5111D1940040040C1AF /* AppDelegate.m */; };
+		83C9C5BC1D1976FD0040C1AF /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5131D1940040040C1AF /* ViewController.h */; };
+		83C9C5BD1D1976FD0040C1AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5141D1940040040C1AF /* ViewController.m */; };
+		83C9C5BE1D1976FD0040C1AF /* RecognitionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C56C1D19409C0040C1AF /* RecognitionViewController.h */; };
+		83C9C5BF1D1976FD0040C1AF /* RecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C56D1D19409C0040C1AF /* RecognitionViewController.m */; };
+		83C9C5C01D1976FD0040C1AF /* MAddContactTableViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C56E1D19409C0040C1AF /* MAddContactTableViewController.h */; };
+		83C9C5C11D1976FD0040C1AF /* MAddContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C56F1D19409C0040C1AF /* MAddContactTableViewController.m */; };
+		83C9C5C21D1976FD0040C1AF /* MFieldContactCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5701D19409C0040C1AF /* MFieldContactCell.h */; };
+		83C9C5C31D1976FD0040C1AF /* MFieldContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5711D19409C0040C1AF /* MFieldContactCell.m */; };
+		83C9C5C81D1976FD0040C1AF /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5191D1940040040C1AF /* Assets.xcassets */; };
+		83C9C5C91D1976FD0040C1AF /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C51E1D1940040040C1AF /* Info.plist */; };
+		83C9C5CA1D1976FD0040C1AF /* ImageUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5331D1940800040C1AF /* ImageUtils.h */; };
+		83C9C5CB1D1976FD0040C1AF /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5341D1940800040C1AF /* ImageUtils.m */; };
+		83C9C5CD1D1976FD0040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5361D1940800040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.h */; };
+		83C9C5CE1D1976FD0040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5371D1940800040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.m */; };
+		83C9C5CF1D1976FD0040C1AF /* RecognitionOperations.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5381D1940800040C1AF /* RecognitionOperations.h */; };
+		83C9C5D01D1976FD0040C1AF /* RecognitionOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5391D1940800040C1AF /* RecognitionOperations.m */; };
+		83C9C5D11D1976FD0040C1AF /* RecognitionService.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C53A1D1940800040C1AF /* RecognitionService.h */; };
+		83C9C5D21D1976FD0040C1AF /* RecognitionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C53B1D1940800040C1AF /* RecognitionService.m */; };
+		83C9C5D51D1976FD0040C1AF /* CFNetwork.framework in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5B81D1975D80040C1AF /* CFNetwork.framework */; };
+		83C9C5D61D1976FD0040C1AF /* libAbbyyMsdk.a in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C5401D1940800040C1AF /* libAbbyyMsdk.a */; };
+		83C9C5F31D1976FD0040C1AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C50E1D1940040040C1AF /* main.m */; };
+		83C9C5F41D1976FD0040C1AF /* demoOCR.app in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C50A1D1940040040C1AF /* demoOCR.app */; };
+		83C9C68F1D19A23E0040C1AF /* IMocrDataSource.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6781D19A2320040C1AF /* IMocrDataSource.h */; };
+		83C9C6901D19A23E0040C1AF /* IMocrLanguage.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6791D19A2320040C1AF /* IMocrLanguage.h */; };
+		83C9C6911D19A23E0040C1AF /* IMocrRecognitionManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C67A1D19A2320040C1AF /* IMocrRecognitionManager.h */; };
+		83C9C6921D19A23E0040C1AF /* MocrBarcode.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C67B1D19A2320040C1AF /* MocrBarcode.h */; };
+		83C9C6931D19A23E0040C1AF /* MocrBusinessCard.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C67C1D19A2320040C1AF /* MocrBusinessCard.h */; };
+		83C9C6941D19A23E0040C1AF /* MocrCharacter.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C67D1D19A2320040C1AF /* MocrCharacter.h */; };
+		83C9C6951D19A23E0040C1AF /* MocrDefs.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C67E1D19A2320040C1AF /* MocrDefs.h */; };
+		83C9C6961D19A23E0040C1AF /* MocrDirectoryDataSource.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C67F1D19A2320040C1AF /* MocrDirectoryDataSource.h */; };
+		83C9C6971D19A23E0040C1AF /* MocrEngine.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6801D19A2320040C1AF /* MocrEngine.h */; };
+		83C9C6981D19A23E0040C1AF /* MocrErrors.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6811D19A2320040C1AF /* MocrErrors.h */; };
+		83C9C6991D19A23E0040C1AF /* MocrImageRegion.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6821D19A2320040C1AF /* MocrImageRegion.h */; };
+		83C9C69A1D19A23E0040C1AF /* MocrLayout.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6831D19A2320040C1AF /* MocrLayout.h */; };
+		83C9C69B1D19A23E0040C1AF /* MocrLicense.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6841D19A2320040C1AF /* MocrLicense.h */; };
+		83C9C69C1D19A23E0040C1AF /* MocrPrebuiltLayoutInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6851D19A2320040C1AF /* MocrPrebuiltLayoutInfo.h */; };
+		83C9C69D1D19A23E0040C1AF /* MocrPrebuiltTextBlockInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6861D19A2320040C1AF /* MocrPrebuiltTextBlockInfo.h */; };
+		83C9C69E1D19A23E0040C1AF /* MocrPrebuiltTextLineInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6871D19A2320040C1AF /* MocrPrebuiltTextLineInfo.h */; };
+		83C9C69F1D19A23E0040C1AF /* MocrRecognitionConfiguration.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6881D19A2320040C1AF /* MocrRecognitionConfiguration.h */; };
+		83C9C6A01D19A23E0040C1AF /* MocrRect.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C6891D19A2320040C1AF /* MocrRect.h */; };
+		83C9C6A11D19A23E0040C1AF /* MocrTextBlock.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C68A1D19A2320040C1AF /* MocrTextBlock.h */; };
+		83C9C6A21D19A23E0040C1AF /* MocrTextLine.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C68B1D19A2320040C1AF /* MocrTextLine.h */; };
+		83C9C6A31D19A23E0040C1AF /* MocrTextWord.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C68C1D19A2320040C1AF /* MocrTextWord.h */; };
+		83C9C6A41D19A23E0040C1AF /* MocrTextWordVariant.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C68D1D19A2320040C1AF /* MocrTextWordVariant.h */; };
+		83C9C6A51D19A23E0040C1AF /* MocrUserLanguage.h in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C68E1D19A2320040C1AF /* MocrUserLanguage.h */; };
+		83C9C6BB1D19A6C50040C1AF /* libAbbyyMsdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C9C6B81D19A6A30040C1AF /* libAbbyyMsdk.a */; };
+		83E10DF81D23B66200D5AFD4 /* takePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E10DF71D23B66200D5AFD4 /* takePictureViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83C9C57B1D19417A0040C1AF /* Copy Files ( Keywords ) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Keywords;
+			dstSubfolderSpec = 7;
+			files = (
+				83C9C57C1D1941880040C1AF /* English.akw in Copy Files ( Keywords ) */,
+				83C9C57D1D1941880040C1AF /* French.akw in Copy Files ( Keywords ) */,
+			);
+			name = "Copy Files ( Keywords )";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C9C57E1D19419E0040C1AF /* Copy Files ( Dictionaries ) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Dictionaries;
+			dstSubfolderSpec = 7;
+			files = (
+				83C9C57F1D1941AA0040C1AF /* English.edc in Copy Files ( Dictionaries ) */,
+				83C9C5801D1941AA0040C1AF /* French.edc in Copy Files ( Dictionaries ) */,
+			);
+			name = "Copy Files ( Dictionaries )";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C9C5811D1941AE0040C1AF /* Copy Files ( Patterns ) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Patterns;
+			dstSubfolderSpec = 7;
+			files = (
+				83C9C5821D1941C60040C1AF /* European.rom in Copy Files ( Patterns ) */,
+			);
+			name = "Copy Files ( Patterns )";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8307B7861D26A4FA00513F2A /* license */ = {isa = PBXFileReference; lastKnownFileType = file; path = license; sourceTree = "<group>"; };
+		833B7E151D1C2F9C00A340DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		83C9C50A1D1940040040C1AF /* demoOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C9C50E1D1940040040C1AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83C9C5101D1940040040C1AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83C9C5111D1940040040C1AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83C9C5131D1940040040C1AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		83C9C5141D1940040040C1AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		83C9C5171D1940040040C1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83C9C5191D1940040040C1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83C9C51C1D1940040040C1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83C9C51E1D1940040040C1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C9C5331D1940800040C1AF /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		83C9C5341D1940800040C1AF /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		83C9C5361D1940800040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelectorOnMainThreadMultipleArgs.h"; sourceTree = "<group>"; };
+		83C9C5371D1940800040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSelectorOnMainThreadMultipleArgs.m"; sourceTree = "<group>"; };
+		83C9C5381D1940800040C1AF /* RecognitionOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognitionOperations.h; sourceTree = "<group>"; };
+		83C9C5391D1940800040C1AF /* RecognitionOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognitionOperations.m; sourceTree = "<group>"; };
+		83C9C53A1D1940800040C1AF /* RecognitionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognitionService.h; sourceTree = "<group>"; };
+		83C9C53B1D1940800040C1AF /* RecognitionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognitionService.m; sourceTree = "<group>"; };
+		83C9C53D1D1940800040C1AF /* English.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = English.edc; sourceTree = "<group>"; };
+		83C9C53E1D1940800040C1AF /* French.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = French.edc; sourceTree = "<group>"; };
+		83C9C5401D1940800040C1AF /* libAbbyyMsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAbbyyMsdk.a; path = "/Users/olytvynov-bogdanov/Documents/IOS/demoOCR/demoOCR/Frameworks/libAbbyyMsdk.a"; sourceTree = "<absolute>"; };
+		83C9C55B1D1940800040C1AF /* English.akw */ = {isa = PBXFileReference; lastKnownFileType = file; path = English.akw; sourceTree = "<group>"; };
+		83C9C55C1D1940800040C1AF /* French.akw */ = {isa = PBXFileReference; lastKnownFileType = file; path = French.akw; sourceTree = "<group>"; };
+		83C9C55F1D1940800040C1AF /* European.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = European.rom; sourceTree = "<group>"; };
+		83C9C56C1D19409C0040C1AF /* RecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognitionViewController.h; sourceTree = "<group>"; };
+		83C9C56D1D19409C0040C1AF /* RecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognitionViewController.m; sourceTree = "<group>"; };
+		83C9C56E1D19409C0040C1AF /* MAddContactTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAddContactTableViewController.h; sourceTree = "<group>"; };
+		83C9C56F1D19409C0040C1AF /* MAddContactTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAddContactTableViewController.m; sourceTree = "<group>"; };
+		83C9C5701D19409C0040C1AF /* MFieldContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFieldContactCell.h; sourceTree = "<group>"; };
+		83C9C5711D19409C0040C1AF /* MFieldContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFieldContactCell.m; sourceTree = "<group>"; };
+		83C9C5B81D1975D80040C1AF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = "<absolute>"; };
+		83C9C6781D19A2320040C1AF /* IMocrDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMocrDataSource.h; sourceTree = "<group>"; };
+		83C9C6791D19A2320040C1AF /* IMocrLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMocrLanguage.h; sourceTree = "<group>"; };
+		83C9C67A1D19A2320040C1AF /* IMocrRecognitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMocrRecognitionManager.h; sourceTree = "<group>"; };
+		83C9C67B1D19A2320040C1AF /* MocrBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrBarcode.h; sourceTree = "<group>"; };
+		83C9C67C1D19A2320040C1AF /* MocrBusinessCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrBusinessCard.h; sourceTree = "<group>"; };
+		83C9C67D1D19A2320040C1AF /* MocrCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrCharacter.h; sourceTree = "<group>"; };
+		83C9C67E1D19A2320040C1AF /* MocrDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrDefs.h; sourceTree = "<group>"; };
+		83C9C67F1D19A2320040C1AF /* MocrDirectoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrDirectoryDataSource.h; sourceTree = "<group>"; };
+		83C9C6801D19A2320040C1AF /* MocrEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrEngine.h; sourceTree = "<group>"; };
+		83C9C6811D19A2320040C1AF /* MocrErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrErrors.h; sourceTree = "<group>"; };
+		83C9C6821D19A2320040C1AF /* MocrImageRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrImageRegion.h; sourceTree = "<group>"; };
+		83C9C6831D19A2320040C1AF /* MocrLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrLayout.h; sourceTree = "<group>"; };
+		83C9C6841D19A2320040C1AF /* MocrLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrLicense.h; sourceTree = "<group>"; };
+		83C9C6851D19A2320040C1AF /* MocrPrebuiltLayoutInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrPrebuiltLayoutInfo.h; sourceTree = "<group>"; };
+		83C9C6861D19A2320040C1AF /* MocrPrebuiltTextBlockInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrPrebuiltTextBlockInfo.h; sourceTree = "<group>"; };
+		83C9C6871D19A2320040C1AF /* MocrPrebuiltTextLineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrPrebuiltTextLineInfo.h; sourceTree = "<group>"; };
+		83C9C6881D19A2320040C1AF /* MocrRecognitionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrRecognitionConfiguration.h; sourceTree = "<group>"; };
+		83C9C6891D19A2320040C1AF /* MocrRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrRect.h; sourceTree = "<group>"; };
+		83C9C68A1D19A2320040C1AF /* MocrTextBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrTextBlock.h; sourceTree = "<group>"; };
+		83C9C68B1D19A2320040C1AF /* MocrTextLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrTextLine.h; sourceTree = "<group>"; };
+		83C9C68C1D19A2320040C1AF /* MocrTextWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrTextWord.h; sourceTree = "<group>"; };
+		83C9C68D1D19A2320040C1AF /* MocrTextWordVariant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrTextWordVariant.h; sourceTree = "<group>"; };
+		83C9C68E1D19A2320040C1AF /* MocrUserLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocrUserLanguage.h; sourceTree = "<group>"; };
+		83C9C6AA1D19A2CF0040C1AF /* MobilOCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobilOCR.h; sourceTree = "<group>"; };
+		83C9C6B81D19A6A30040C1AF /* libAbbyyMsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAbbyyMsdk.a; sourceTree = "<group>"; };
+		83C9C6BA1D19A6A30040C1AF /* libAbbyyMsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAbbyyMsdk.a; sourceTree = "<group>"; };
+		83E10DF61D23B66200D5AFD4 /* takePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = takePictureViewController.h; sourceTree = "<group>"; };
+		83E10DF71D23B66200D5AFD4 /* takePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = takePictureViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83C9C5071D1940040040C1AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833B7E161D1C2F9C00A340DB /* AVFoundation.framework in Frameworks */,
+				83C9C6BB1D19A6C50040C1AF /* libAbbyyMsdk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83C9C5011D1940040040C1AF = {
+			isa = PBXGroup;
+			children = (
+				833B7E151D1C2F9C00A340DB /* AVFoundation.framework */,
+				83C9C6B61D19A6A30040C1AF /* lib */,
+				83C9C50C1D1940040040C1AF /* demoOCR */,
+				83C9C50B1D1940040040C1AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83C9C50B1D1940040040C1AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C50A1D1940040040C1AF /* demoOCR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83C9C50C1D1940040040C1AF /* demoOCR */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C5101D1940040040C1AF /* AppDelegate.h */,
+				83C9C5111D1940040040C1AF /* AppDelegate.m */,
+				83C9C5131D1940040040C1AF /* ViewController.h */,
+				83C9C5141D1940040040C1AF /* ViewController.m */,
+				83E10DF61D23B66200D5AFD4 /* takePictureViewController.h */,
+				83E10DF71D23B66200D5AFD4 /* takePictureViewController.m */,
+				83C9C56C1D19409C0040C1AF /* RecognitionViewController.h */,
+				83C9C56D1D19409C0040C1AF /* RecognitionViewController.m */,
+				83C9C56E1D19409C0040C1AF /* MAddContactTableViewController.h */,
+				83C9C56F1D19409C0040C1AF /* MAddContactTableViewController.m */,
+				83C9C5701D19409C0040C1AF /* MFieldContactCell.h */,
+				83C9C5711D19409C0040C1AF /* MFieldContactCell.m */,
+				83C9C5161D1940040040C1AF /* Main.storyboard */,
+				83C9C5191D1940040040C1AF /* Assets.xcassets */,
+				83C9C51B1D1940040040C1AF /* LaunchScreen.storyboard */,
+				83C9C51E1D1940040040C1AF /* Info.plist */,
+				8307B7861D26A4FA00513F2A /* license */,
+				83C9C6771D19A2320040C1AF /* inc */,
+				83C9C5321D1940800040C1AF /* Classes */,
+				83C9C53C1D1940800040C1AF /* Dictionaries */,
+				83C9C55A1D1940800040C1AF /* Keywords */,
+				83C9C55E1D1940800040C1AF /* Patterns */,
+				83C9C50D1D1940040040C1AF /* Supporting Files */,
+			);
+			path = demoOCR;
+			sourceTree = "<group>";
+		};
+		83C9C50D1D1940040040C1AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C50E1D1940040040C1AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83C9C5321D1940800040C1AF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C5331D1940800040C1AF /* ImageUtils.h */,
+				83C9C5341D1940800040C1AF /* ImageUtils.m */,
+				83C9C5361D1940800040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.h */,
+				83C9C5371D1940800040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.m */,
+				83C9C5381D1940800040C1AF /* RecognitionOperations.h */,
+				83C9C5391D1940800040C1AF /* RecognitionOperations.m */,
+				83C9C53A1D1940800040C1AF /* RecognitionService.h */,
+				83C9C53B1D1940800040C1AF /* RecognitionService.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		83C9C53C1D1940800040C1AF /* Dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C53D1D1940800040C1AF /* English.edc */,
+				83C9C53E1D1940800040C1AF /* French.edc */,
+			);
+			path = Dictionaries;
+			sourceTree = "<group>";
+		};
+		83C9C55A1D1940800040C1AF /* Keywords */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C55B1D1940800040C1AF /* English.akw */,
+				83C9C55C1D1940800040C1AF /* French.akw */,
+			);
+			path = Keywords;
+			sourceTree = "<group>";
+		};
+		83C9C55E1D1940800040C1AF /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C55F1D1940800040C1AF /* European.rom */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		83C9C6771D19A2320040C1AF /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C6AA1D19A2CF0040C1AF /* MobilOCR.h */,
+				83C9C6781D19A2320040C1AF /* IMocrDataSource.h */,
+				83C9C6791D19A2320040C1AF /* IMocrLanguage.h */,
+				83C9C67A1D19A2320040C1AF /* IMocrRecognitionManager.h */,
+				83C9C67B1D19A2320040C1AF /* MocrBarcode.h */,
+				83C9C67C1D19A2320040C1AF /* MocrBusinessCard.h */,
+				83C9C67D1D19A2320040C1AF /* MocrCharacter.h */,
+				83C9C67E1D19A2320040C1AF /* MocrDefs.h */,
+				83C9C67F1D19A2320040C1AF /* MocrDirectoryDataSource.h */,
+				83C9C6801D19A2320040C1AF /* MocrEngine.h */,
+				83C9C6811D19A2320040C1AF /* MocrErrors.h */,
+				83C9C6821D19A2320040C1AF /* MocrImageRegion.h */,
+				83C9C6831D19A2320040C1AF /* MocrLayout.h */,
+				83C9C6841D19A2320040C1AF /* MocrLicense.h */,
+				83C9C6851D19A2320040C1AF /* MocrPrebuiltLayoutInfo.h */,
+				83C9C6861D19A2320040C1AF /* MocrPrebuiltTextBlockInfo.h */,
+				83C9C6871D19A2320040C1AF /* MocrPrebuiltTextLineInfo.h */,
+				83C9C6881D19A2320040C1AF /* MocrRecognitionConfiguration.h */,
+				83C9C6891D19A2320040C1AF /* MocrRect.h */,
+				83C9C68A1D19A2320040C1AF /* MocrTextBlock.h */,
+				83C9C68B1D19A2320040C1AF /* MocrTextLine.h */,
+				83C9C68C1D19A2320040C1AF /* MocrTextWord.h */,
+				83C9C68D1D19A2320040C1AF /* MocrTextWordVariant.h */,
+				83C9C68E1D19A2320040C1AF /* MocrUserLanguage.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		83C9C6B61D19A6A30040C1AF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C6B71D19A6A30040C1AF /* -iPhone */,
+				83C9C6B91D19A6A30040C1AF /* -iphonesimulator */,
+			);
+			name = lib;
+			path = demoOCR/lib;
+			sourceTree = "<group>";
+		};
+		83C9C6B71D19A6A30040C1AF /* -iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C6B81D19A6A30040C1AF /* libAbbyyMsdk.a */,
+			);
+			path = "-iPhone";
+			sourceTree = "<group>";
+		};
+		83C9C6B91D19A6A30040C1AF /* -iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C6BA1D19A6A30040C1AF /* libAbbyyMsdk.a */,
+			);
+			path = "-iphonesimulator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83C9C5091D1940040040C1AF /* demoOCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C9C5211D1940040040C1AF /* Build configuration list for PBXNativeTarget "demoOCR" */;
+			buildPhases = (
+				83C9C5061D1940040040C1AF /* Sources */,
+				83C9C5071D1940040040C1AF /* Frameworks */,
+				83C9C5081D1940040040C1AF /* Resources */,
+				83C9C57B1D19417A0040C1AF /* Copy Files ( Keywords ) */,
+				83C9C57E1D19419E0040C1AF /* Copy Files ( Dictionaries ) */,
+				83C9C5811D1941AE0040C1AF /* Copy Files ( Patterns ) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demoOCR;
+			productName = demoOCR;
+			productReference = 83C9C50A1D1940040040C1AF /* demoOCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83C9C5021D1940040040C1AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "o.lytvynov-bogdanov";
+				TargetAttributes = {
+					83C9C5091D1940040040C1AF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = P2Y6274KUF;
+					};
+				};
+			};
+			buildConfigurationList = 83C9C5051D1940040040C1AF /* Build configuration list for PBXProject "demoOCR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83C9C5011D1940040040C1AF;
+			productRefGroup = 83C9C50B1D1940040040C1AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83C9C5091D1940040040C1AF /* demoOCR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83C9C5081D1940040040C1AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8307B7881D26A58600513F2A /* license in Resources */,
+				83C9C51D1D1940040040C1AF /* LaunchScreen.storyboard in Resources */,
+				83C9C51A1D1940040040C1AF /* Assets.xcassets in Resources */,
+				83C9C5181D1940040040C1AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83C9C5061D1940040040C1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831E3A761D2C0A5700C8B584 /* MobilOCR.h in Sources */,
+				83C9C68F1D19A23E0040C1AF /* IMocrDataSource.h in Sources */,
+				83C9C6901D19A23E0040C1AF /* IMocrLanguage.h in Sources */,
+				83C9C6911D19A23E0040C1AF /* IMocrRecognitionManager.h in Sources */,
+				83C9C6921D19A23E0040C1AF /* MocrBarcode.h in Sources */,
+				83C9C6931D19A23E0040C1AF /* MocrBusinessCard.h in Sources */,
+				83C9C6941D19A23E0040C1AF /* MocrCharacter.h in Sources */,
+				83C9C6951D19A23E0040C1AF /* MocrDefs.h in Sources */,
+				83C9C6961D19A23E0040C1AF /* MocrDirectoryDataSource.h in Sources */,
+				83C9C6971D19A23E0040C1AF /* MocrEngine.h in Sources */,
+				83C9C6981D19A23E0040C1AF /* MocrErrors.h in Sources */,
+				83C9C6991D19A23E0040C1AF /* MocrImageRegion.h in Sources */,
+				83C9C69A1D19A23E0040C1AF /* MocrLayout.h in Sources */,
+				83C9C69B1D19A23E0040C1AF /* MocrLicense.h in Sources */,
+				83C9C69C1D19A23E0040C1AF /* MocrPrebuiltLayoutInfo.h in Sources */,
+				83C9C69D1D19A23E0040C1AF /* MocrPrebuiltTextBlockInfo.h in Sources */,
+				83C9C69E1D19A23E0040C1AF /* MocrPrebuiltTextLineInfo.h in Sources */,
+				83C9C69F1D19A23E0040C1AF /* MocrRecognitionConfiguration.h in Sources */,
+				83C9C6A01D19A23E0040C1AF /* MocrRect.h in Sources */,
+				83C9C6A11D19A23E0040C1AF /* MocrTextBlock.h in Sources */,
+				83C9C6A21D19A23E0040C1AF /* MocrTextLine.h in Sources */,
+				83C9C6A31D19A23E0040C1AF /* MocrTextWord.h in Sources */,
+				83C9C6A41D19A23E0040C1AF /* MocrTextWordVariant.h in Sources */,
+				83C9C6A51D19A23E0040C1AF /* MocrUserLanguage.h in Sources */,
+				83C9C5BA1D1976FD0040C1AF /* AppDelegate.h in Sources */,
+				83C9C5BB1D1976FD0040C1AF /* AppDelegate.m in Sources */,
+				83E10DF81D23B66200D5AFD4 /* takePictureViewController.m in Sources */,
+				83C9C5BC1D1976FD0040C1AF /* ViewController.h in Sources */,
+				83C9C5BD1D1976FD0040C1AF /* ViewController.m in Sources */,
+				83C9C5BE1D1976FD0040C1AF /* RecognitionViewController.h in Sources */,
+				83C9C5BF1D1976FD0040C1AF /* RecognitionViewController.m in Sources */,
+				83C9C5C01D1976FD0040C1AF /* MAddContactTableViewController.h in Sources */,
+				83C9C5C11D1976FD0040C1AF /* MAddContactTableViewController.m in Sources */,
+				83C9C5C21D1976FD0040C1AF /* MFieldContactCell.h in Sources */,
+				83C9C5C31D1976FD0040C1AF /* MFieldContactCell.m in Sources */,
+				83C9C5C81D1976FD0040C1AF /* Assets.xcassets in Sources */,
+				83C9C5C91D1976FD0040C1AF /* Info.plist in Sources */,
+				83C9C5CA1D1976FD0040C1AF /* ImageUtils.h in Sources */,
+				83C9C5CB1D1976FD0040C1AF /* ImageUtils.m in Sources */,
+				83C9C5CD1D1976FD0040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.h in Sources */,
+				83C9C5CE1D1976FD0040C1AF /* NSObject+PerformSelectorOnMainThreadMultipleArgs.m in Sources */,
+				83C9C5CF1D1976FD0040C1AF /* RecognitionOperations.h in Sources */,
+				83C9C5D01D1976FD0040C1AF /* RecognitionOperations.m in Sources */,
+				83C9C5D11D1976FD0040C1AF /* RecognitionService.h in Sources */,
+				83C9C5D21D1976FD0040C1AF /* RecognitionService.m in Sources */,
+				83C9C5D51D1976FD0040C1AF /* CFNetwork.framework in Sources */,
+				83C9C5D61D1976FD0040C1AF /* libAbbyyMsdk.a in Sources */,
+				83C9C5F31D1976FD0040C1AF /* main.m in Sources */,
+				83C9C5F41D1976FD0040C1AF /* demoOCR.app in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83C9C5161D1940040040C1AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83C9C5171D1940040040C1AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83C9C51B1D1940040040C1AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83C9C51C1D1940040040C1AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83C9C51F1D1940040040C1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7s;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/demoOCR/lib/$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../inc";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lAbbyyMsdk",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$($ARCHS_STANDSARD_32BIT)";
+			};
+			name = Debug;
+		};
+		83C9C5201D1940040040C1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7s;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/demoOCR/lib/$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../inc";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lAbbyyMsdk",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "$($ARCHS_STANDSARD_32BIT)";
+			};
+			name = Release;
+		};
+		83C9C5221D1940040040C1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/demoOCR/lib/$(EFFECTIVE_PLATFORM_NAME)";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../inc";
+				INFOPLIST_FILE = demoOCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/demoOCR/lib/$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/demoOCR/lib/iPhone",
+					"$(PROJECT_DIR)/demoOCR/lib/iphonesimulator",
+					"$(PROJECT_DIR)/demoOCR/lib/-iPhone",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = Masao.demoOCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7s arm64";
+			};
+			name = Debug;
+		};
+		83C9C5231D1940040040C1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/demoOCR/lib/$(EFFECTIVE_PLATFORM_NAME)";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../inc";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(BUILT_PRODUCTS_DIR)/../../inc";
+				INFOPLIST_FILE = demoOCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/demoOCR/lib/$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/demoOCR/lib/iPhone",
+					"$(PROJECT_DIR)/demoOCR/lib/iphonesimulator",
+					"$(PROJECT_DIR)/demoOCR/lib/-iPhone",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = Masao.demoOCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83C9C5051D1940040040C1AF /* Build configuration list for PBXProject "demoOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C9C51F1D1940040040C1AF /* Debug */,
+				83C9C5201D1940040040C1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C9C5211D1940040040C1AF /* Build configuration list for PBXNativeTarget "demoOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C9C5221D1940040040C1AF /* Debug */,
+				83C9C5231D1940040040C1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83C9C5021D1940040040C1AF /* Project object */;
+}
